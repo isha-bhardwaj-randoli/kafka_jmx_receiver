@@ -1,9 +1,9 @@
 receivers:
   jmx:
-    jar_path: /opt/opentelemetry-java-contrib-jmx-metrics.jar
+    jar_path: /otel-collector-jars/opentelemetry-jmx-metrics.jar
     endpoint: service:jmx:rmi:///jndi/rmi://kafka:9999/jmxrmi
     target_system: kafka
-    collection_interval: 10s
+    collection_interval: 15s
 
 processors:
   batch:
